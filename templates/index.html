@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <script src="/static/js/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>LCS | Graphs</title>
+</head>
+<body>
+    <main>
+        <h1>
+            Forces, Torques and Axes Positions Real Time Data
+        </h1>
+
+        <div class="user-menu">
+            <a class="menu-btn" id="connect-btn">Connect <i class="fas fa-plug"></i> </a>
+            <a class="menu-btn" id="start-btn">Start <i class="far fa-play-circle"></i> </a>
+            <div class="recording">
+                <span>¿Record Data?</span>
+                <label class="switch">
+                    <input type="checkbox" id="isRecording">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+            <a class="menu-btn" id="stop-btn">Stop <i class="far fa-stop-circle"></i> </a>
+            <a class="menu-btn" id="disconnect-btn">Disconnect <i class="far fa-stop-circle"></i> </a>
+            <a class="menu-btn" id="change-view-btn">Change View</a>
+        </div>
+        <div class="user-menu">
+            <a class="menu-btn" id="tare-clipx">Tare ClipX</a>
+            <a class="menu-btn" id="tare-heiden">Tare Heidenhain</a>
+            
+        </div>
+        <section class="graphs" id="graphs">
+            <div class="graphs-wrapper">
+                <div class="graph" id="graph1"></div>
+                <div class="graph" id="graph2"></div>
+            </div>
+            <div id="values" class="user-menu">
+                
+            </div>
+            <div class="graph" id="graph3">
+
+            </div>
+        </section>
+
+        <section class="values">
+
+        </section>
+    </main>
+    <script src="/static/js/index.js"></script>
+    
+    
+</body>
+</html>

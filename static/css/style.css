@@ -1,0 +1,152 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.graphs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.user-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 120px;
+}
+
+.menu-btn {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 4px 4px 12px #e3e3e3,
+                -4px 4px 12px #e3e3e3,
+                -4px -4px 12px #e3e3e3,
+                4px -4px 12px #e3e3e3,
+                -4px -4px 12px #ffffff;
+}
+
+.menu-btn:hover{
+    box-shadow: inset 4px 4px 12px #e3e3e3,
+    inset -4px 4px 12px #e3e3e3,
+    inset -4px -4px 12px #e3e3e3,
+    inset 4px -4px 12px #e3e3e3,
+    inset -4px -4px 12px #ffffff;
+    cursor: pointer;
+}
+
+.graphs-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#values {
+  font-size: 32px;
+  font-weight: 600;
+}
+/* ---------- SWITCH STYLING ----------- */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .recording {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  /* Divs with background color*/
+  .pink {
+    background-color: #EF476F;    
+  }
+
+  .yellow {
+    background-color: #FFD166;
+  }
+
+  .green {
+    background-color: #06d6a0;
+  }
+
+  .blue {
+    background-color: #118ab2;
+  }
